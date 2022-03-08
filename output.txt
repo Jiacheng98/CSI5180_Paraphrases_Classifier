@@ -1,0 +1,56 @@
+train samples: 2000
+dev samples: 200
+test samples: 200
+
+Check number of 0s and 1s labels: 
+train data: 0s: 1309, 1s: 691                   
+dev data: 0s: 118, 1s: 82
+test data: 0s: 175, 1s: 25
+
+baseline_algo, dev data                
+postivie class: 1, tp1: 1, fp1: 0, fn1: 81, precision: 1.0, recall: 0.012195121951219513, f1_score1: 0.024096385542168676                 
+postive class: 0, tp0: 118, fp0: 81, fn0: 0, precision: 0.592964824120603, recall: 1.0, f1_score0: 0.7444794952681387                
+macro precision: 0.7964824120603016, macro_recall: 0.5060975609756098, macro_f1_score: 0.3842879404051537                
+micro preicsion: 0.595, micro_recall: 0.595, micro_f1_score: 0.595
+
+baseline_algo, test data                
+postivie class: 1, tp1: 1, fp1: 0, fn1: 24, precision: 1.0, recall: 0.04, f1_score1: 0.07692307692307693                 
+postive class: 0, tp0: 175, fp0: 24, fn0: 0, precision: 0.8793969849246231, recall: 1.0, f1_score0: 0.9358288770053477                
+macro precision: 0.9396984924623115, macro_recall: 0.52, macro_f1_score: 0.5063759769642123                
+micro preicsion: 0.88, micro_recall: 0.88, micro_f1_score: 0.88
+
+TF_IDF_cosine_similarity, dev data                
+postivie class: 1, tp1: 3, fp1: 1, fn1: 79, precision: 0.75, recall: 0.036585365853658534, f1_score1: 0.0697674418604651                 
+postive class: 0, tp0: 117, fp0: 79, fn0: 1, precision: 0.5969387755102041, recall: 0.9915254237288136, f1_score0: 0.7452229299363057                
+macro precision: 0.6734693877551021, macro_recall: 0.5140553947912361, macro_f1_score: 0.4074951858983854                
+micro preicsion: 0.6, micro_recall: 0.6, micro_f1_score: 0.6
+
+TF_IDF_cosine_similarity, test data                
+postivie class: 1, tp1: 1, fp1: 0, fn1: 24, precision: 1.0, recall: 0.04, f1_score1: 0.07692307692307693                 
+postive class: 0, tp0: 175, fp0: 24, fn0: 0, precision: 0.8793969849246231, recall: 1.0, f1_score0: 0.9358288770053477                
+macro precision: 0.9396984924623115, macro_recall: 0.52, macro_f1_score: 0.5063759769642123                
+micro preicsion: 0.88, micro_recall: 0.88, micro_f1_score: 0.88
+
+KNN, dev data                        
+postivie class: 1, tp1: 18, fp1: 12, fn1: 64, precision: 0.6, recall: 0.21951219512195122, f1_score1: 0.32142857142857145                        
+postive class: 0, tp0: 106, fp0: 64, fn0: 12, precision: 0.6235294117647059, recall: 0.8983050847457628, f1_score0: 0.736111111111111                       
+macro precision: 0.611764705882353, macro_recall: 0.558908639933857, macro_f1_score: 0.5287698412698413                        
+micro preicsion: 0.62, micro_recall: 0.62, micro_f1_score: 0.62
+
+KNN, test data                        
+postivie class: 1, tp1: 5, fp1: 7, fn1: 20, precision: 0.4166666666666667, recall: 0.2, f1_score1: 0.2702702702702703                        
+postive class: 0, tp0: 168, fp0: 20, fn0: 7, precision: 0.8936170212765957, recall: 0.96, f1_score0: 0.9256198347107437                       
+macro precision: 0.6551418439716312, macro_recall: 0.58, macro_f1_score: 0.597945052490507                        
+micro preicsion: 0.865, micro_recall: 0.865, micro_f1_score: 0.865
+
+DT, dev data                        
+postivie class: 1, tp1: 24, fp1: 33, fn1: 58, precision: 0.42105263157894735, recall: 0.2926829268292683, f1_score1: 0.3453237410071942                        
+postive class: 0, tp0: 85, fp0: 58, fn0: 33, precision: 0.5944055944055944, recall: 0.7203389830508474, f1_score0: 0.6513409961685823                       
+macro precision: 0.5077291129922709, macro_recall: 0.5065109549400578, macro_f1_score: 0.49833236858788826                        
+micro preicsion: 0.545, micro_recall: 0.545, micro_f1_score: 0.545
+
+DT, test data                        
+postivie class: 1, tp1: 5, fp1: 20, fn1: 20, precision: 0.2, recall: 0.2, f1_score1: 0.20000000000000004                        
+postive class: 0, tp0: 155, fp0: 20, fn0: 20, precision: 0.8857142857142857, recall: 0.8857142857142857, f1_score0: 0.8857142857142857                       
+macro precision: 0.5428571428571428, macro_recall: 0.5428571428571428, macro_f1_score: 0.5428571428571428                        
+micro preicsion: 0.8, micro_recall: 0.8, micro_f1_score: 0.8000000000000002
