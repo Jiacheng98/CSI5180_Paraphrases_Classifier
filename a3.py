@@ -149,7 +149,7 @@ def feed_dev_test_into_algo():
     global algorithm_name, log_file, test_sentence_pair_index_dict
     dev_test = ["dev", "test"]
     for algo_index in range(len(algorithm_name)):
-        log_test_sentence_file = open(f'{algorithm_name[algo_index]}_test.txt', 'w+')
+        log_test_sentence_file = open(f'algorithms_output/{algorithm_name[algo_index]}_test.txt', 'w+')
         for data_name in dev_test:
             # tp1: true positive if to consider the label 1 as the positive class
             # tp0: true positive if to consider the label 0 as the positive class
@@ -204,7 +204,7 @@ def feed_dev_test_into_algo():
 def train_dev_test_knn():
     global test_sentence_pair_index_dict
 
-    log_test_sentence_file = open('knn_test.txt', 'w+')
+    log_test_sentence_file = open('algorithms_output/knn_test.txt', 'w+')
     # train the decision tree
     model = KNeighborsClassifier(n_neighbors=5)
     model.fit(train_input, train_label)
@@ -256,7 +256,7 @@ def train_dev_test_knn():
 def train_dev_test_dt():
     global test_sentence_pair_index_dict
 
-    log_test_sentence_file = open('dt.txt', 'w+')
+    log_test_sentence_file = open('algorithms_output/dt.txt', 'w+')
     # train the decision tree
     model = tree.DecisionTreeClassifier()
     model.fit(train_input, train_label)
@@ -304,8 +304,8 @@ def train_dev_test_dt():
 
 
 if __name__ == "__main__":
-    log_file = open('output.txt', 'w+')
-    data_procesing = open('train_dev_test_data_processing.txt', 'w+')
+    log_file = open('algorithms_output/output.txt', 'w+')
+    data_procesing = open('algorithms_output/train_dev_test_data_processing.txt', 'w+')
     data_path = "SemEval-PIT2015/data/SemEval-PIT2015-github/data"
     data_file_list = ['train', 'dev', 'test']
     # for samples number
